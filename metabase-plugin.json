@@ -1,0 +1,7 @@
+{
+  "name": "BarChartRace",
+  "icon": "bar-race.svg",
+  "metabase": {
+    "version": ">=1.60.0"
+  }
+}

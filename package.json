@@ -1,0 +1,38 @@
+{
+  "name": "@metabase/custom-viz-bar-chart-race",
+  "version": "1.2.9",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=22.12"
+  },
+  "scripts": {
+    "postinstall": "node scripts/ensure-rolldown-binding.mjs",
+    "build": "vite build && node pack.mjs",
+    "dev": "vite build --watch & vite preview",
+    "prettier": "prettier --write .",
+    "type-check": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/d3": "^7.4.3",
+    "@types/react": "18.2",
+    "@types/react-dom": "18.2",
+    "@types/tar-stream": "^3.1.4",
+    "@vitejs/plugin-react": "5.2",
+    "prettier": "^3.8.3",
+    "tar-stream": "^3.1.8",
+    "typescript": "^6.0.2",
+    "vite": "8.0.8"
+  },
+  "dependencies": {
+    "@metabase/custom-viz": "^1.0.3",
+    "d3": "^7.9.0",
+    "react": "18.2",
+    "react-dom": "18.2"
+  },
+  "optionalDependencies": {
+    "@rolldown/binding-darwin-arm64": "1.0.0-rc.15",
+    "@rolldown/binding-darwin-x64": "1.0.0-rc.15"
+  }
+}
